@@ -9,7 +9,7 @@ namespace ETicaretAPI.Domain.Entities
 {
     public class Order:BaseEntitiy
     {
-        public int CustomerID { get; set; }
+        public Guid CustomerID { get; set; }
         public string Description { get; set; }
         public string Adress { get; set; }
         public ICollection<Product> Products { get; set; }    
